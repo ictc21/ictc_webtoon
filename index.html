@@ -37,9 +37,10 @@ a.ep:hover{background:#f4f7fc}
 .foot{padding:36px 24px;text-align:center;color:#8a94a3;font-size:14px;line-height:1.7;background:#f3f4f6;margin-top:24px}
 @media (max-width:520px){.hero h1{font-size:34px}.thumb{flex-basis:112px;height:63px}.ti{font-size:18px}}
 /*credit*/.foot{padding:36px 24px;text-align:center;color:#8a94a3;font-size:15px;line-height:1.8;background:#f3f4f6}
+.foot .fit{display:block;white-space:nowrap}
 .foot .mk{color:#0d2a5c;font-weight:700;text-decoration:none;border-bottom:1px dashed #0d2a5c;cursor:zoom-in}
 .foot .mk:hover{color:#d7261e;border-color:#d7261e}
-.foot .ph{display:block;margin:16px auto 0;max-width:420px;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.15);cursor:zoom-in}
+.foot .ph{display:block;margin:18px auto 0;width:100%;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.15);cursor:zoom-in}
 .foot .ph img{display:block;width:100%}
 .lb{display:none;position:fixed;inset:0;z-index:99;background:rgba(0,0,0,.85);align-items:center;justify-content:center;padding:20px;cursor:zoom-out;text-decoration:none}
 .lb:target{display:flex}
@@ -119,7 +120,7 @@ a.ep:hover{background:#f4f7fc}
     <div><b>임동완</b> <span class="rk">소방교</span><br>구조1대 구조대원</div>
   </div>
 
-  <div class="foot"><span class="fit">근거: SOP100-113 지휘통제절차 해설(2025.12. 개정판) · 교육용 전 12화</span><span class="fit"><a class="mk" href="#maker" title="사진 보기">만든이: 부산지휘역량강화센터(정종인,서종근,주강호,신태선,고기석,이도경)</a></span><a class="ph" href="#maker"><img src="credit/busan_ictc_s.webp" alt="만든이 — 부산 현장지휘역량강화센터" loading="lazy"></a></div>
+  <div class="foot"><span class="fit">근거: SOP100-113 지휘통제절차 해설(2025.12. 개정판) · 교육용 전 12화</span><span class="fit"><a class="mk" href="#maker" title="만든 사람들 사진 보기">© 2026 부산ICTC 서종근 외 5명. All rights reserved.</a></span><a class="ph" href="#maker"><img src="credit/busan_ictc.webp" alt="만든이 — 부산 현장지휘역량강화센터" loading="lazy"></a></div>
 <a class="lb" id="maker" href="#_" aria-label="닫기"><img src="credit/busan_ictc.webp" alt="만든이 — 부산 현장지휘역량강화센터 (주강호, 서종근, 정종인, 고기석, 신태선, 이도경)" loading="lazy"><span>×</span></a>
 </div>
 <script>/*fit-script*/(function(){var E=[].slice.call(document.querySelectorAll(".hero .fit,.foot .fit"));function f(){E.forEach(function(e){if(!e.dataset.b)e.dataset.b=parseFloat(getComputedStyle(e).fontSize);var z=+e.dataset.b;e.style.fontSize=z+"px";var w=e.clientWidth;if(e.scrollWidth>w)z=Math.max(8,z*w/e.scrollWidth-0.3);e.style.fontSize=z+"px";while(e.scrollWidth>e.clientWidth&&z>8){z-=0.5;e.style.fontSize=z+"px"}})}f();addEventListener("resize",f);document.fonts&&document.fonts.ready.then(f)})();</script>
