@@ -1,0 +1,74 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="author" content="부산지휘역량강화센터(정종인,서종근,주강호,신태선,고기석,이도경) 공동제작"><meta name="viewport" content="width=800"><title>ICTC 지휘통제절차 웹툰 3화 「지휘권 선언」</title><style>
+@font-face{font-family:P;src:local("Pretendard Bold"),local("Pretendard-Bold");font-weight:700}
+@font-face{font-family:P;src:local("Pretendard Regular"),local("Pretendard-Regular");font-weight:400}
+body{margin:0;background:#2b2b2b;font-family:P,"Malgun Gothic",sans-serif}
+.ep{width:800px;margin:0 auto;background:#fff}
+.head{padding:70px 40px 50px;text-align:center;background:linear-gradient(#0d2a5c,#173f86);color:#fff}
+.head .s{font-size:20px;letter-spacing:4px;color:#ffd34d}.head h1{font-size:54px;margin:14px 0 6px}.head .t{font-size:22px;opacity:.85}
+.cut{position:relative;padding:56px 0 34px}
+.frame{position:relative;z-index:1;overflow:hidden;background:#d9dde3;border:2px solid #111;box-sizing:content-box;margin:0 auto}
+.r916{width:660px;height:1173px}.r169{width:760px;height:427px}
+.cut.odd .r916{margin-left:48px}.cut.even .r916{margin-left:88px}
+.frame img{display:block;width:100%;height:100%;object-fit:cover}
+.ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#55606e;font-size:26px}
+/* 설명란: 흰 사각형, 얇은 검정 테두리, 가운데 정렬, 칸 위 테두리에 걸침 */
+.nar{position:relative;z-index:3;display:flex;justify-content:center;margin:0 60px -34px}
+.nar div{background:#fff;border:2px solid #111;padding:16px 30px;font-size:24px;line-height:1.55;text-align:center;color:#111;max-width:560px;word-break:keep-all}
+.cut.odd .nar{margin:0 0 -34px;padding:0 92px 0 48px}.cut.even .nar{margin:0 0 -34px;padding:0 52px 0 88px}
+.nar.mono div{font-style:italic;color:#24324a}
+/* 말풍선: 흰 타원, 검정 선, 칸 테두리에 걸침, 꼬리는 말하는 사람 쪽 */
+.top,.bot{position:relative;z-index:3;display:flex;flex-direction:column;gap:14px}
+.top{margin-bottom:-30px}.bot{margin-top:-30px}.nar+.frame+.bot{margin-top:-30px}
+.bw{display:flex;padding:0 34px}.bw.sL{justify-content:flex-start}.bw.sR{justify-content:flex-end}.bw.sC{justify-content:center}
+.bx{position:relative;max-width:500px}
+.b{position:relative;background:#fff;border:3px solid #111;border-radius:50%/50%;padding:30px 44px;font-size:24px;line-height:1.5;text-align:center;color:#111;word-break:keep-all}
+.b.long{border-radius:60px}
+.b.think{border-style:dashed;border-radius:50%/50%;font-style:italic;color:#24324a}
+.b.radio{border-radius:14px;border-width:3px;box-shadow:0 0 0 3px #fff,0 0 0 5px #111;font-weight:700;padding:26px 30px 22px}
+.b .tag{position:absolute;left:16px;top:-15px;background:#d7261e;color:#fff;font-size:15px;font-weight:700;padding:2px 10px;border-radius:10px;letter-spacing:1px}
+.tl{position:absolute;width:40px;height:46px;overflow:visible}
+.tl path{fill:#fff;stroke:#111;stroke-width:3;stroke-linejoin:round}
+.tl.th circle{fill:#fff;stroke:#111;stroke-width:2.5}
+.tl.dn{top:calc(100% - 6px)}.tl.up{bottom:calc(100% - 6px)}
+.tl.tL{left:24%}.tl.tR{right:24%}.tl.tC{left:calc(50% - 20px)}
+.b{z-index:1}
+/* 특수 칸 */
+.cardword{position:absolute;top:55.6%;transform:translate(-50%,-50%);font-size:38px;font-weight:700;color:#1d1d1d;white-space:nowrap}
+.titlecard{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;border:2px solid #111;padding:16px 30px;font-size:38px;font-weight:700;white-space:nowrap}
+.wrongband{position:absolute;left:0;right:0;top:0;background:#d7261e;color:#fff;font-weight:700;font-size:28px;padding:12px 24px;letter-spacing:2px;z-index:3}
+.cut.wrong .frame{border:8px solid #d7261e}
+.summary{position:absolute;left:34px;right:34px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.95);border:3px solid #0d2a5c;border-radius:20px;padding:36px 32px;box-sizing:border-box;font-size:26px;line-height:1.6;color:#0d2a5c}
+.summary h2{margin:0 0 22px;font-size:36px;color:#d7261e}.summary li{margin-bottom:20px}.summary .src{display:block;font-size:18px;color:#5a6575}
+.next{position:absolute;left:0;right:0;bottom:0;background:rgba(13,42,92,.88);color:#fff;padding:20px 28px;font-size:23px;line-height:1.5}
+.next b{color:#ffd34d;font-size:28px}.next a{color:#ffd34d}
+.foot{padding:40px;text-align:center;color:#8a94a3;font-size:16px;background:#f3f4f6}
+.home{display:block;padding:14px 24px;background:#0a1f45;color:#ffd34d;font-size:18px;text-decoration:none}.navend{display:block;padding:26px;text-align:center;background:#0d2a5c;color:#fff;font-size:22px;text-decoration:none}
+.b.radio.noise{background:#eceff3;color:#5a6575;text-decoration:line-through}
+</style></head><body><div class="ep"><a class="home" href="../">← 목록으로</a>
+<div class="head"><div class="s">ICTC 지휘통제절차 웹툰 · 시즌 1</div><h1>3화 「지휘권 선언」</h1><div class="t">도착과 동시에 무전으로 — 누가, 언제부터 지휘하는가</div></div>
+<section class="cut" id="c1" data-cut="1"><div class="nar"><div>가람구 한솔아파트 신축공사현장 A동. 15층 공사 중, 4층에서 5층으로 불이 번지고 있다.</div></div><div class="frame r169"><img src="img/01.webp" loading="lazy" alt="컷 1"></div></section>
+<section class="cut odd" id="c2" data-cut="2"><div class="top"><div class="bw sC"><div class="bx"><svg class="tl tC dn th" viewBox="0 0 40 46"><circle cx="14" cy="12" r="8"/><circle cx="8" cy="34" r="5"/></svg><div class="b think">사람들이… 아직 저 위에…</div></div></div></div><div class="frame r916"><img src="img/02.webp" loading="lazy" alt="컷 2"></div></section>
+<section class="cut even" id="c3" data-cut="3"><div class="nar"><div>도착과 동시에.</div></div><div class="frame r916"><img src="img/03.webp" loading="lazy" alt="컷 3"></div></section>
+<section class="cut odd" id="c4" data-cut="4"><div class="top"><div class="bw sC"><div class="bx"><svg class="tl tC dn" viewBox="0 0 40 46"><path d="M10 0 Q16 20 6 44 Q18 26 34 0"/></svg><div class="b radio">진압1대 현장도착! 현 시간부로 진압1대장이 현장지휘하겠음!</div></div></div></div><div class="frame r916"><img src="img/04.webp" loading="lazy" alt="컷 4"></div></section>
+<section class="cut" id="c5" data-cut="5"><div class="nar"><div>지휘권 선언: 누가 지휘하는지 현장 전체에 알린다. 상황실, 지휘대장, 뒤따르는 모든 출동대에.</div></div><div class="frame r169"><img src="img/05.webp" loading="lazy" alt="컷 5"></div></section>
+<section class="cut even" id="c6" data-cut="6"><div class="top"><div class="bw sL"><div class="bx"><svg class="tl tL dn" viewBox="0 0 40 46"><path d="M10 0 Q16 20 6 44 Q18 26 34 0"/></svg><div class="b say">불부터 끄는 게 아니라… 무전부터요?</div></div></div></div><div class="frame r916"><img src="img/06.webp" loading="lazy" alt="컷 6"></div><div class="bot"><div class="bw sR"><div class="bx"><svg class="tl tR up" viewBox="0 0 40 46"><path d="M6 46 Q22 20 34 2 Q24 26 30 46"/></svg><div class="b say">누가 지휘하는지 모르면 다들 제각각 움직여.</div></div></div></div></section>
+<section class="cut wrong odd" id="c7" data-cut="7"><div class="frame r916"><img src="img/07.webp" loading="lazy" alt="컷 7"><div class="wrongband">✕ 잘못된 예 — 누가 지휘하는지 알 수 없는 선언.</div></div><div class="bot"><div class="bw sC"><div class="bx"><svg class="tl tC up" viewBox="0 0 40 46"><path d="M10 46 Q16 26 6 2 Q18 20 34 46"/></svg><div class="b radio">지휘권 선언!</div></div></div></div></section>
+<section class="cut even" id="c8" data-cut="8"><div class="nar"><div>선언은 '누가, 언제부터' 지휘하는지 분명하게. 도착 즉시, 수 초 안에.</div></div><div class="frame r916"><img src="img/08.webp" loading="lazy" alt="컷 8"></div></section>
+<section class="cut odd" id="c9" data-cut="9"><div class="top"><div class="bw sL"><div class="bx"><svg class="tl tL dn" viewBox="0 0 40 46"><path d="M10 0 Q16 20 6 44 Q18 26 34 0"/></svg><div class="b say">강호는 펌프 준비하고 대기. 도경, 나랑 한 바퀴 돈다.</div></div></div></div><div class="frame r916"><img src="img/09.webp" loading="lazy" alt="컷 9"></div></section>
+<section class="cut even" id="c10" data-cut="10"><div class="top"><div class="bw sL"><div class="bx"><svg class="tl tL dn" viewBox="0 0 40 46"><path d="M10 0 Q16 20 6 44 Q18 26 34 0"/></svg><div class="b say">지금요? 사람들이 갇혀 있는데요!</div></div></div></div><div class="frame r916"><img src="img/10.webp" loading="lazy" alt="컷 10"></div><div class="bot"><div class="bw sR"><div class="bx"><svg class="tl tR up" viewBox="0 0 40 46"><path d="M6 46 Q22 20 34 2 Q24 26 30 46"/></svg><div class="b say">그러니까 본다. 제대로 봐야 제대로 구한다.</div></div></div></div></section>
+<section class="cut" id="c11" data-cut="11"><div class="nar"><div>360도 둘러보기: 건물 전면(주도로·주출입구 쪽)이 A면, 시계 방향으로 B·C·D면. 층은 위아래로 나눈다.</div></div><div class="frame r169"><img src="img/11.webp" loading="lazy" alt="컷 11"></div></section>
+<section class="cut odd" id="c12" data-cut="12"><div class="nar"><div>화점, 연소 방향, 진입로.</div></div><div class="frame r916"><img src="img/12.webp" loading="lazy" alt="컷 12"></div><div class="bot"><div class="bw sL"><div class="bx"><svg class="tl tL up th" viewBox="0 0 40 46"><circle cx="14" cy="34" r="8"/><circle cx="8" cy="12" r="5"/></svg><div class="b think">A면, 주출입구. 4층 화염, 5층으로 번지는 중.</div></div></div></div></section>
+<section class="cut even" id="c13" data-cut="13"><div class="top"><div class="bw sL"><div class="bx"><svg class="tl tL dn th" viewBox="0 0 40 46"><circle cx="14" cy="12" r="8"/><circle cx="8" cy="34" r="5"/></svg><div class="b think">B면, 외부 비계와 안전망. 위로 옮겨붙을 수 있는지 본다.</div></div></div></div><div class="frame r916"><img src="img/13.webp" loading="lazy" alt="컷 13"></div></section>
+<section class="cut odd" id="c14" data-cut="14"><div class="top"><div class="bw sC"><div class="bx"><svg class="tl tC dn" viewBox="0 0 40 46"><path d="M10 0 Q16 20 6 44 Q18 26 34 0"/></svg><div class="b say">대장님! C면 6층, 작업자 두 명이 손을 흔들어요!</div></div></div></div><div class="frame r916"><img src="img/14.webp" loading="lazy" alt="컷 14"></div></section>
+<section class="cut even" id="c15" data-cut="15"><div class="nar"><div>위험 요소와 구조대상자는 발견 즉시 전파한다.</div></div><div class="frame r916"><img src="img/15.webp" loading="lazy" alt="컷 15"></div><div class="bot"><div class="bw sC"><div class="bx"><svg class="tl tC up" viewBox="0 0 40 46"><path d="M10 46 Q16 26 6 2 Q18 20 34 46"/></svg><div class="b radio">진압1대장이다. C면 6층 구조대상자 2명 확인!</div></div></div></div></section>
+<section class="cut odd" id="c16" data-cut="16"><div class="nar"><div>차량 진입과 회차가 가능한지도 본다.</div></div><div class="frame r916"><img src="img/16.webp" loading="lazy" alt="컷 16"></div><div class="bot"><div class="bw sL"><div class="bx"><svg class="tl tL up th" viewBox="0 0 40 46"><circle cx="14" cy="34" r="8"/><circle cx="8" cy="12" r="5"/></svg><div class="b think">D면, 타워크레인과 자재 적치. 차가 들어올 길은 A면뿐이다.</div></div></div></div></section>
+<section class="cut even" id="c17" data-cut="17"><div class="nar"><div>관계인 확보: 구조대상자와 대피 정보는 현장을 아는 사람에게서.</div></div><div class="frame r916"><img src="img/17.webp" loading="lazy" alt="컷 17"></div><div class="bot"><div class="bw sL"><div class="bx"><svg class="tl tL up" viewBox="0 0 40 46"><path d="M10 46 Q16 26 6 2 Q18 20 34 46"/></svg><div class="b say long">현장소장입니다! 4층, 5층에 작업자가 열 명 넘게 있었어요. 몇 명이 내려왔는지 아직…</div></div></div></div></section>
+<section class="cut odd" id="c18" data-cut="18"><div class="top"><div class="bw sL"><div class="bx"><svg class="tl tL dn" viewBox="0 0 40 46"><path d="M10 0 Q16 20 6 44 Q18 26 34 0"/></svg><div class="b say long">작업자 명단 있습니까? 내려온 분들은 정문 앞에 모아 주세요. 인원 확인되면 바로 알려 주시고요.</div></div></div></div><div class="frame r916"><img src="img/18.webp" loading="lazy" alt="컷 18"></div></section>
+<section class="cut even" id="c19" data-cut="19"><div class="top"><div class="bw sL"><div class="bx"><svg class="tl tL dn" viewBox="0 0 40 46"><path d="M10 0 Q16 20 6 44 Q18 26 34 0"/></svg><div class="b say">한 바퀴 돌았을 뿐인데, 아까랑 그림이 완전히 달라요.</div></div></div></div><div class="frame r916"><img src="img/19.webp" loading="lazy" alt="컷 19"></div><div class="bot"><div class="bw sR"><div class="bx"><svg class="tl tR up" viewBox="0 0 40 46"><path d="M6 46 Q22 20 34 2 Q24 26 30 46"/></svg><div class="b say">처음 정보는 늘 틀린다. 그래서 직접 보고, 직접 묻는다.</div></div></div></div></section>
+<section class="cut odd" id="c20" data-cut="20"><div class="top"><div class="bw sL"><div class="bx"><svg class="tl tL dn" viewBox="0 0 40 46"><path d="M10 0 Q16 20 6 44 Q18 26 34 0"/></svg><div class="b say">건물이 훨씬 크면요? 다 못 돌면요?</div></div></div></div><div class="frame r916"><img src="img/20.webp" loading="lazy" alt="컷 20"></div><div class="bot"><div class="bw sR"><div class="bx"><svg class="tl tR up" viewBox="0 0 40 46"><path d="M6 46 Q22 20 34 2 Q24 26 30 46"/></svg><div class="b say">그땐 다른 출동대를 보내서라도 네 면을 다 채운다.</div></div></div></div></section>
+<section class="cut" id="c21" data-cut="21"><div class="nar"><div>지휘권 선언이 나오자 후착대는 대기1단계로 멈춰 선다.</div></div><div class="frame r169"><img src="img/21.webp" loading="lazy" alt="컷 21"></div><div class="bot"><div class="bw sC"><div class="bx"><svg class="tl tC up" viewBox="0 0 40 46"><path d="M10 46 Q16 26 6 2 Q18 20 34 46"/></svg><div class="b radio">진압3대, 한솔로 교차로 도착, 대원 4명. 임무대기 중.</div></div></div></div></section>
+<section class="cut even" id="c22" data-cut="22"><div class="nar"><div>관찰한 정보를 정리해 최초 상황보고를 준비한다.</div></div><div class="frame r916"><img src="img/22.webp" loading="lazy" alt="컷 22"></div><div class="bot"><div class="bw sC"><div class="bx"><svg class="tl tC up th" viewBox="0 0 40 46"><circle cx="14" cy="34" r="8"/><circle cx="8" cy="12" r="5"/></svg><div class="b think">건물, 사람, 불, 위험. 이제 모두에게 알릴 차례다.</div></div></div></div></section>
+<section class="cut odd" id="c23" data-cut="23"><div class="nar mono"><div>선언 없는 지휘는 없다. 하지만 선언만으로 끝나는 지휘도 없었다.</div></div><div class="frame r916"><img src="img/23.webp" loading="lazy" alt="컷 23"></div></section>
+<section class="cut even" id="c24" data-cut="24"><div class="frame r916"><img src="img/24.webp" loading="lazy" alt="컷 24"><div class="summary"><h2>핵심 포인트</h2><ol><li>도착과 동시에 무전으로 지휘권 선언, '누가·언제부터'<span class="src">SOP 101 1.2</span></li><li>360도 둘러보기: A·B·C·D면과 위·아래층, 위험·구조대상자는 즉시 전파<span class="src">SOP 101 2.2 · 102 2.1.3</span></li><li>관계인을 확보해 구조대상자·대피 정보를 묻는다<span class="src">SOP 102 2.1.4</span></li></ol></div></div></section>
+<section class="cut" id="c25" data-cut="25"><div class="frame r169"><img src="img/25.webp" loading="lazy" alt="컷 25"><div class="next"><b>다음 화 — 「첫 보고」.</b><br>선언 + 최초 상황보고 = 지휘권 확립. 무전 한 번에 무엇을 담는가.</div></div></section>
+<a class="navend" href="../">← 지휘통제절차 편 목록으로</a><div class="foot">근거: SOP100-113 지휘통제절차 해설(2025.12. 개정판) · 재난현장 표준작전절차(2025.12.) · 현장지휘관 자격인증 과정 교육자료 · 등장 인물·지명은 가상입니다.<br>ICTC 지휘역량강화센터 교육용<br>만든이: 부산지휘역량강화센터(정종인,서종근,주강호,신태선,고기석,이도경) 공동제작</div></div><script>const m=location.hash.match(/only=([0-9,]+)/);if(m){const k=m[1].split(",");document.querySelectorAll(".cut").forEach(s=>{if(!k.includes(s.dataset.cut))s.remove()});document.querySelector(".head").remove()}</script></body></html>
