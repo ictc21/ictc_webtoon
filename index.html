@@ -16,7 +16,7 @@ body{margin:0;background:#2b2b2b;font-family:P,"Malgun Gothic","Apple SD Gothic 
 .hero h1{font-size:44px;margin:14px 0 8px;line-height:1.25}
 .hero h1 small{display:block;font-size:24px;font-weight:400;opacity:.9;margin-top:6px}
 .hero p{font-size:17px;line-height:1.6;opacity:.88;margin:18px auto 0;max-width:540px}
-@media (min-width:760px){.hero p{max-width:none}.hero p .l1{white-space:nowrap}}
+/*fit*/.hero p{max-width:none}.fit{display:block;white-space:nowrap}
 .hero .go{display:inline-block;margin-top:26px;padding:14px 30px;background:#ffd34d;color:#0d2a5c;font-weight:700;font-size:19px;border-radius:40px;text-decoration:none;box-shadow:4px 4px 0 rgba(0,0,0,.3)}
 h2{font-size:22px;margin:0;padding:28px 24px 12px;color:#0d2a5c;border-bottom:3px solid #0d2a5c}
 .list{list-style:none;margin:0;padding:0}
@@ -50,9 +50,9 @@ a.ep:hover{background:#f4f7fc}
 <body>
 <div class="wrap">
   <header class="hero">
-    <div class="s">ICTC 웹툰 · 시즌 1</div>
-    <h1>지휘통제절차 편<small>현장지휘관의 첫 판단</small></h1>
-    <p><span class="l1">가람구 한솔아파트 신축공사현장 화재. 지령 한 줄에서 지휘권 선언, 현장지휘소까지 —</span><br>SOP 100-113 지휘통제절차를 웹툰으로 따라갑니다.</p>
+    <div class="s fit">ICTC 웹툰 · 시즌 1</div>
+    <h1><span class="fit">지휘통제절차 편</span><small class="fit">현장지휘관의 첫 판단</small></h1>
+    <p><span class="fit">가람구 한솔아파트 신축공사현장 화재. 지령 한 줄에서 지휘권 선언, 현장지휘소까지 —</span><span class="fit">SOP 100-113 지휘통제절차를 웹툰으로 따라갑니다.</span></p>
     <a class="go" href="ep01/">1화부터 보기 →</a>
   </header>
 
@@ -119,8 +119,9 @@ a.ep:hover{background:#f4f7fc}
     <div><b>임동완</b> <span class="rk">소방교</span><br>구조1대 구조대원</div>
   </div>
 
-  <div class="foot">근거: SOP100-113 지휘통제절차 해설(2025.12. 개정판) · 교육용 전 12화<br><a class="mk" href="#maker" title="사진 보기">만든이: 부산지휘역량강화센터(정종인,서종근,주강호,신태선,고기석,이도경)</a><a class="ph" href="#maker"><img src="credit/busan_ictc_s.webp" alt="만든이 — 부산 현장지휘역량강화센터" loading="lazy"></a></div>
+  <div class="foot"><span class="fit">근거: SOP100-113 지휘통제절차 해설(2025.12. 개정판) · 교육용 전 12화</span><span class="fit"><a class="mk" href="#maker" title="사진 보기">만든이: 부산지휘역량강화센터(정종인,서종근,주강호,신태선,고기석,이도경)</a></span><a class="ph" href="#maker"><img src="credit/busan_ictc_s.webp" alt="만든이 — 부산 현장지휘역량강화센터" loading="lazy"></a></div>
 <a class="lb" id="maker" href="#_" aria-label="닫기"><img src="credit/busan_ictc.webp" alt="만든이 — 부산 현장지휘역량강화센터 (주강호, 서종근, 정종인, 고기석, 신태선, 이도경)" loading="lazy"><span>×</span></a>
 </div>
+<script>/*fit-script*/(function(){var E=[].slice.call(document.querySelectorAll(".hero .fit,.foot .fit"));function f(){E.forEach(function(e){if(!e.dataset.b)e.dataset.b=parseFloat(getComputedStyle(e).fontSize);var z=+e.dataset.b;e.style.fontSize=z+"px";var w=e.clientWidth;if(e.scrollWidth>w)z=Math.max(8,z*w/e.scrollWidth-0.3);e.style.fontSize=z+"px";while(e.scrollWidth>e.clientWidth&&z>8){z-=0.5;e.style.fontSize=z+"px"}})}f();addEventListener("resize",f);document.fonts&&document.fonts.ready.then(f)})();</script>
 </body>
 </html>
